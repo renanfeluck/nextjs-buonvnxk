@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
+  image: {}
 }));
 
 const Header = () => {
@@ -92,7 +93,7 @@ const Header = () => {
           >
             <MenuIcon />
           </IconButton>
-          <img src="/logo.png" alt="Buonvnxk" />
+          <img className={classes.image} src="/logo.png" alt="Buonvnxk" />
         </div>
         <div className={classes.iconBox}>
           <img src="/svg/crown.svg" alt="" className={classes.icon} />
