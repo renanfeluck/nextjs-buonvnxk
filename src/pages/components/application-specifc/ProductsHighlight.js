@@ -29,8 +29,14 @@ const ProductsHighligts = () => {
       <Typography className={classes.title}> HÀNG VNXK NỔI BẬT </Typography>
       <div className={classes.featuredProductsBox}>
         <Grid container>
-          {products.map((product) => (
-            <Grid className={classes.featuredProductCard} item sm={4} xs={12}>
+          {products.map((product, index) => (
+            <Grid
+              key={index}
+              className={classes.featuredProductCard}
+              item
+              sm={4}
+              xs={12}
+            >
               <FeatureProductCard
                 image1={product.image1}
                 image2={product.image2}

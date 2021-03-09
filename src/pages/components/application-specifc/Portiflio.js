@@ -70,21 +70,21 @@ const Portifolio = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="p" className={classes.heading}>
+            <Typography className={classes.heading}>
               Thời trang nam VNXK
             </Typography>
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Áo sơ mi Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Quần Jean Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Đồng hồ Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>
@@ -96,21 +96,21 @@ const Portifolio = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="p" className={classes.heading}>
+            <Typography className={classes.heading}>
               Thời trang Nữ VNXK
             </Typography>
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Áo sơ mi Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Quần Jean Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Đồng hồ Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>
@@ -122,21 +122,21 @@ const Portifolio = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="p" className={classes.heading}>
+            <Typography className={classes.heading}>
               Các loại hàng VNXK khác
             </Typography>
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Áo sơ mi Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Quần Jean Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Đồng hồ Nam VNXK
             </Typography>
-            <Typography variant="p" className={classes.details}>
+            <Typography className={classes.details}>
               Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>

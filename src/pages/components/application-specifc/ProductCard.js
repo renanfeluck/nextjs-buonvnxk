@@ -1,4 +1,6 @@
 import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import LocalPhoneIcon from "@material-ui/icons/LocalPhone";
+import StarIcon from "@material-ui/icons/Star";
 
 const useStyles = makeStyles({
   cardBox: {
@@ -22,9 +24,35 @@ const useStyles = makeStyles({
   textBox: {
     padding: "4px",
   },
+  phone: {
+    color: "#00B14F",
+    display: "flex",
+  },
+  phoneIcon: {
+    width: "20px",
+    height: "20px",
+  },
+  phoneText: {
+    fontSize: "14px",
+  },
+  reviewIcon: {
+    color: "#FFCE00",
+    width: "14px",
+    height: "auto",
+  },
+  reviewText: {
+    fontSize: "12px",
+    color: "#d5d5d5",
+    marginLeft: "6px",
+  },
+  reviewBox: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
-const ProductCard = ({ src, title, description }) => {
+const ProductCard = ({ src, title, description, review, phone }) => {
   const classes = useStyles();
 
   return (
@@ -39,6 +67,24 @@ const ProductCard = ({ src, title, description }) => {
             {description}
           </Typography>
         </Grid>
+        {review && phone && (
+          <>
+            <Grid className={classes.phone} item xs={4}>
+              <LocalPhoneIcon className={classes.phoneIcon} />
+              <Typography className={classes.phoneText}> {phone} </Typography>
+            </Grid>
+            <Grid className={classes.reviewBox} item xs={8}>
+              <StarIcon className={classes.reviewIcon} />
+              <StarIcon className={classes.reviewIcon} />
+              <StarIcon className={classes.reviewIcon} />
+              <StarIcon className={classes.reviewIcon} />
+              <StarIcon className={classes.reviewIcon} />
+              <Typography className={classes.reviewText}>
+                ({review} đánh giá)
+              </Typography>
+            </Grid>
+          </>
+        )}
       </Grid>
     </Box>
   );

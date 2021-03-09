@@ -7,6 +7,7 @@ import Map from "./components/application-specifc/Map";
 import { Grid, Container, makeStyles } from "@material-ui/core";
 import CommentaryNews from "./components/application-specifc/CommentaryNews";
 import TypicalProducts from "./components/application-specifc/TypicalProducts";
+import News from "./components/application-specifc/News";
 
 const useStyles = makeStyles({
   portifoliContainer: {
@@ -33,6 +34,7 @@ export default function Home() {
       </Container>
       <CommentaryNews />
       <TypicalProducts />
+      <News />
     </>
   );
 }

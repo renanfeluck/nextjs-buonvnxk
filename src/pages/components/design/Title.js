@@ -13,6 +13,11 @@ const useStyles = makeStyles({
     fontSize: "20px",
     textAlign: "center",
   },
+  titleBlack: {
+    color: "#161616",
+    fontSize: "20px",
+    textAlign: "center",
+  },
   titleBox: {
     display: "block",
   },
@@ -23,14 +28,23 @@ const useStyles = makeStyles({
     margin: "15px auto",
     height: "2px",
   },
+  dividerBlack: {
+    backgroundColor: "#00b14f",
+    width: "80px",
+    display: "block",
+    margin: "15px auto",
+    height: "2px",
+  },
 });
 
-const Title = ({ title }) => {
+const Title = ({ title, black = false }) => {
   const classes = useStyles();
   return (
     <Box className={classes.titleBox}>
-      <Typography className={classes.title}>{title}</Typography>
-      <Divider className={classes.divider} />
+      <Typography className={black ? classes.titleBlack : classes.title}>
+        {title}
+      </Typography>
+      <Divider className={black ? classes.dividerBlack : classes.divider} />
     </Box>
   );
 };
