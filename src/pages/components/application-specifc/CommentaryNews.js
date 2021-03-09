@@ -1,4 +1,4 @@
-import { Box, Container, makeStyles } from "@material-ui/core";
+import { Box, Container, Grid, makeStyles } from "@material-ui/core";
 import ProfilePicture from "../design/ProfilePicture";
 import Title from "../design/Title";
 import CommentaryBox from "./CommentaryBox";
@@ -21,13 +21,42 @@ const CommentaryNews = () => {
       <Title title="TIN BÌNH LUẬN NHIỀU" />
 
       <Box className={classes.commentBox}>
-        <Box>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <CommentaryBox
+              src="/product1.png"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <CommentaryBox
+              src="/product1.png"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <CommentaryBox
+              src="/product2.png"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <CommentaryBox
+              src="/product1.png"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+            />
+          </Grid>
+
           <CommentaryBox
-            src="/product1.png"
+            src="/product2.png"
             comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
             count="159"
           />
-        </Box>
+        </Grid>
       </Box>
     </Container>
   );

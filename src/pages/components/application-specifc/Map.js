@@ -1,4 +1,10 @@
-import { Container, Divider, makeStyles, Typography } from "@material-ui/core";
+import {
+  Box,
+  Container,
+  Divider,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
 import Title from "../design/Title";
 
 const useStyles = makeStyles({
@@ -31,11 +37,11 @@ const Map = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
+    <Box className={classes.container}>
       <Title title="MUA BÁN VNXK GẦN BẠN" />
 
       <img className={classes.image} src="/map.png" alt="" />
-    </Container>
+    </Box>
   );
 };
 

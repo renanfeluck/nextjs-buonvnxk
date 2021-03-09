@@ -21,6 +21,7 @@ const useStyles = makeStyles({
     height: "100%",
     display: "flex",
     verticalAlign: "center",
+    alignItems: "center",
   },
 });
 

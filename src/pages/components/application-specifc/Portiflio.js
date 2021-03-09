@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     padding: "15px 0",
-    height: "100%",
+    height: "calc(100% - 30px)",
   },
   title: {
     color: "#fff",
@@ -60,7 +60,7 @@ const Portifolio = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
+    <Box className={classes.container}>
       <Box className={classes.accordionBox}>
         <Title title="DANH MỤC SẢN PHẨM" />
 
@@ -142,7 +142,7 @@ const Portifolio = () => {
           </AccordionDetails>
         </Accordion>
       </Box>
-    </Container>
+    </Box>
   );
 };
 
