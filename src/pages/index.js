@@ -11,6 +11,7 @@ import News from "./components/application-specifc/News";
 import Review from "./components/application-specifc/Reviews";
 import FindWhatYouNeed from "./components/application-specifc/FindWhatYouNeed";
 import HomeButtons from "./components/home/HomeButtons";
+import HomeTags from "./components/home/HomeTags";
 
 const useStyles = makeStyles({
   portifoliContainer: {
@@ -41,6 +42,7 @@ export default function Home() {
       <Review />
       <FindWhatYouNeed />
       <HomeButtons />
+      <HomeTags />
     </>
   );
 }
