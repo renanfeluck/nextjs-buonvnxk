@@ -8,6 +8,9 @@ import { Grid, Container, makeStyles } from "@material-ui/core";
 import CommentaryNews from "./components/application-specifc/CommentaryNews";
 import TypicalProducts from "./components/application-specifc/TypicalProducts";
 import News from "./components/application-specifc/News";
+import Review from "./components/application-specifc/Reviews";
+import FindWhatYouNeed from "./components/application-specifc/FindWhatYouNeed";
+import HomeButtons from "./components/home/HomeButtons";
 
 const useStyles = makeStyles({
   portifoliContainer: {
@@ -35,6 +38,9 @@ export default function Home() {
       <CommentaryNews />
       <TypicalProducts />
       <News />
+      <Review />
+      <FindWhatYouNeed />
+      <HomeButtons />
     </>
   );
 }
