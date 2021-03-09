@@ -1,17 +1,17 @@
 import Head from "next/head";
-import Header from "./components/Header";
-import HeroBanner from "./components/home/HeroBanner";
-import ProductsHighligts from "./components/application-specifc/ProductsHighlight";
-import Portifolio from "./components/application-specifc/Portiflio";
-import Map from "./components/application-specifc/Map";
+import Header from "../components/Header";
+import HeroBanner from "../components/home/HeroBanner";
+import ProductsHighligts from "../components/application-specifc/ProductsHighlight";
+import Portifolio from "../components/application-specifc/Portiflio";
+import Map from "../components/application-specifc/Map";
 import { Grid, Container, makeStyles } from "@material-ui/core";
-import CommentaryNews from "./components/application-specifc/CommentaryNews";
-import TypicalProducts from "./components/application-specifc/TypicalProducts";
-import News from "./components/application-specifc/News";
-import Review from "./components/application-specifc/Reviews";
-import FindWhatYouNeed from "./components/application-specifc/FindWhatYouNeed";
-import HomeButtons from "./components/home/HomeButtons";
-import HomeTags from "./components/home/HomeTags";
+import CommentaryNews from "../components/application-specifc/CommentaryNews";
+import TypicalProducts from "../components/application-specifc/TypicalProducts";
+import News from "../components/application-specifc/News";
+import Review from "../components/application-specifc/Reviews";
+import FindWhatYouNeed from "../components/application-specifc/FindWhatYouNeed";
+import HomeButtons from "../components/home/HomeButtons";
+import HomeTags from "../components/home/HomeTags";
 
 const useStyles = makeStyles({
   portifoliContainer: {

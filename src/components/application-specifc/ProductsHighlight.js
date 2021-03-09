@@ -1,6 +1,6 @@
 import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import FeatureProductCard from "./FeatureProductCard";
-import { products } from "../../../mocks/featureProducts";
+import { products } from "../../mocks/featureProducts";
 
 const useStyles = makeStyles({
   title: {
