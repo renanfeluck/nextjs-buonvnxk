@@ -21,11 +21,17 @@ const useStyles = makeStyles({
   },
 });
 
-const IconTextButton = ({ icon, text }) => {
+const IconTextButton = ({ icon, text, background, color }) => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.buttonBox}>
+    <Box
+      className={classes.buttonBox}
+      style={{
+        backgroundColor: background ? background : "",
+        color: color ? color : "",
+      }}
+    >
       <Typography className={classes.iconSpan} variant="span">
         {icon}
       </Typography>
