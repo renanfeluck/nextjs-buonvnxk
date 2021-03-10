@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import StarIcon from "@material-ui/icons/Star";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
+import Title from "../design/Title";
 
 const useStyles = makeStyles({
   reviewBox: {
@@ -24,6 +25,7 @@ const useStyles = makeStyles({
     padding: "32px 16px",
     display: "flex",
     justifyContent: "center",
+    flexDirection: "column",
   },
   reviewIcon: {
     color: "#FFCE00",
@@ -101,6 +103,7 @@ const Review = () => {
 
   return (
     <Container className={classes.container}>
+      <Title title="cảm nhận của NGƯỜI DÙNG" />
       <ReviewBox />
     </Container>
   );

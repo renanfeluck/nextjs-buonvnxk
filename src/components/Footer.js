@@ -8,6 +8,7 @@ import {
 import MobileScreenShareIcon from "@material-ui/icons/MobileScreenShare";
 import MailIcon from "@material-ui/icons/Mail";
 import IconTextButton from "./application-specifc/IconTextButton";
+import PersonPinIcon from "@material-ui/icons/PersonPin";
 
 const useStyles = makeStyles({
   container: {
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "column",
+    paddingTop: "20px",
   },
   flexNameBox: {
     display: "flex",
@@ -48,6 +50,36 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
+  countText: {
+    textAlign: "left",
+    font: "normal normal normal 12px/28px Montserrat",
+    letterSpacing: "0.09px",
+    color: "#FFFFFF",
+    opacity: "1",
+  },
+  personIcon: {
+    width: "20px",
+    height: "20px",
+  },
+  onlineText: {
+    letterSpacing: "var(--unnamed-character-spacing-0-12)",
+    color: "var(--unnamed-color-ffffff)",
+    textAlign: "left",
+    font: "normal normal medium 16px/24px Montserrat",
+    letterSpacing: "0.12px",
+    color: "#FFFFFF",
+    opacity: "1",
+  },
+  name: {
+    font:
+      "var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat)",
+    color: "var(--unnamed-color-ffffff)",
+    textAlign: "left",
+    font: "normal normal normal 12px/24px Montserrat",
+    letterSpacing: "0.09px",
+    color: "#FFFFFF",
+    opacity: "1",
+  },
 });
 
 const Footer = () => {
@@ -59,31 +91,48 @@ const Footer = () => {
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Grid container>
             <Grid item xs={6}>
-              <Typography> Số người online:</Typography>
+              <Typography className={classes.onlineText}>
+                Số người online:
+              </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography> 11.162 khách hàng 3 thành viên </Typography>
+              <Typography>
+                <PersonPinIcon className={classes.personIcon} /> 11.162 khách
+                hàng
+              </Typography>
+              <Typography>
+                <PersonPinIcon className={classes.personIcon} /> 3 thành viên
+              </Typography>
             </Grid>
             <Grid className={classes.flexName} item xs={6}>
               <Box className={classes.flexNameBox}>
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
 
               <Box className={classes.flexNameBox}>
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
 
               <Box className={classes.flexNameBox}>
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
             </Grid>
 
@@ -92,21 +141,30 @@ const Footer = () => {
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
 
               <Box className={classes.flexNameBox}>
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
 
               <Box className={classes.flexNameBox}>
                 <Typography className={classes.letterBox} variant="span">
                   T
                 </Typography>
-                <Typography variant="span"> tâm.nguyễn1 </Typography>
+                <Typography className={classes.name} variant="span">
+                  {" "}
+                  tâm.nguyễn1{" "}
+                </Typography>
               </Box>
             </Grid>
           </Grid>

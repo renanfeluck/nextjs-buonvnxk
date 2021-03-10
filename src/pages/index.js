@@ -13,6 +13,7 @@ import FindWhatYouNeed from "../components/application-specifc/FindWhatYouNeed";
 import HomeButtons from "../components/home/HomeButtons";
 import HomeTags from "../components/home/HomeTags";
 import Footer from "../components/Footer";
+import LastComments from "../components/application-specifc/LastComments";
 
 const useStyles = makeStyles({
   portifoliContainer: {
@@ -38,6 +39,7 @@ export default function Home() {
         </Grid>
       </Container>
       <CommentaryNews />
+      <LastComments />
       <TypicalProducts />
       <News />
       <Review />
