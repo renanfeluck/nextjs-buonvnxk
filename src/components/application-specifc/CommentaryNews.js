@@ -7,6 +7,7 @@ const useStyles = makeStyles({
   container: {
     backgroundColor: "#161616",
     padding: "25px 34px",
+    height: "100%",
   },
   commentBox: {
     backgroundColor: "#fff",
@@ -22,28 +23,28 @@ const CommentaryNews = () => {
 
       <Box className={classes.commentBox}>
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product2.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."

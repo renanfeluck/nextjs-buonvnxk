@@ -4,7 +4,7 @@ import HeroBanner from "../components/home/HeroBanner";
 import ProductsHighligts from "../components/application-specifc/ProductsHighlight";
 import Portifolio from "../components/application-specifc/Portiflio";
 import Map from "../components/application-specifc/Map";
-import { Grid, Container, makeStyles } from "@material-ui/core";
+import { Grid, Container, makeStyles, Box } from "@material-ui/core";
 import CommentaryNews from "../components/application-specifc/CommentaryNews";
 import TypicalProducts from "../components/application-specifc/TypicalProducts";
 import News from "../components/application-specifc/News";
@@ -28,24 +28,47 @@ export default function Home() {
       <Header />
       <HeroBanner />
       <ProductsHighligts />
-      <Container className={classes.portifoliContainer}>
+      <Box className={classes.portifoliContainer}>
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} lg={3}>
             <Portifolio />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} lg={3}>
             <Map />
           </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <CommentaryNews />
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <LastComments />
+          </Grid>
         </Grid>
-      </Container>
-      <CommentaryNews />
-      <LastComments />
+      </Box>
       <TypicalProducts />
-      <News />
-      <Review />
-      <FindWhatYouNeed />
-      <HomeButtons />
-      <HomeTags />
+      <Box className={classes.portifoliContainer}>
+        <Container className={classes.portifoliContainer}>
+          <Grid container>
+            <Grid item xs={12} md={8}>
+              <News />
+            </Grid>
+
+            <Grid item xs={12} md={4}>
+              <Review />
+              <FindWhatYouNeed />
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+
+      <Grid container>
+        <Grid item xs={12}>
+          <HomeButtons />
+        </Grid>
+        <Grid item xs={12} className={classes.portifoliContainer}>
+          <HomeTags />
+        </Grid>
+      </Grid>
+
       <Footer />
     </>
   );

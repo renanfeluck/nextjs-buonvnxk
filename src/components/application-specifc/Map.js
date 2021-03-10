@@ -12,9 +12,10 @@ const useStyles = makeStyles({
     backgroundColor: "#00B14F",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
     padding: "15px 0",
+    height: "100%",
   },
   divider: {
     backgroundColor: "#fff",

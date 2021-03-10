@@ -7,6 +7,9 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
+  backgroundBox: {
+    backgroundColor: "#D5D5D5",
+  },
   container: {
     padding: "24px",
     backgroundColor: "#D5D5D5",
@@ -15,6 +18,7 @@ const useStyles = makeStyles({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    height: "100%",
   },
   cardBox: {
     backgroundColor: "#fff",
@@ -45,11 +49,13 @@ const HomeTags = () => {
   ];
 
   return (
-    <Container className={classes.container}>
-      {tags.map((tag, index) => {
-        return <Box className={classes.cardBox}>{tag}</Box>;
-      })}
-    </Container>
+    <Box className={classes.backgroundBox}>
+      <Container className={classes.container}>
+        {tags.map((tag, index) => {
+          return <Box className={classes.cardBox}>{tag}</Box>;
+        })}
+      </Container>
+    </Box>
   );
 };
 

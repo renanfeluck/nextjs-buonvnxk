@@ -1,4 +1,4 @@
-import { Container, makeStyles } from "@material-ui/core";
+import { Box, Container, makeStyles } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import IconTextButton from "../application-specifc/IconTextButton";
 import MailIcon from "@material-ui/icons/Mail";
@@ -6,6 +6,9 @@ import ShareIcon from "@material-ui/icons/Share";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
 
 const useStyles = makeStyles({
+  backgroundBox: {
+    backgroundColor: "#161616",
+  },
   container: {
     backgroundColor: "#161616",
     padding: "36px",
@@ -53,13 +56,15 @@ const HomeButtons = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
-      <IconTextButton icon={<WriteIcon />} text="Đăng tin mua bán" />
-      <IconTextButton icon={<Mail />} text="Theo dõi" />
-      <IconTextButton icon={<Crown />} text="Kiếm thưởng" />
-      <IconTextButton icon={<Share />} text="Giao lưu chia sẻ" />
-      <IconTextButton icon={<Add />} text="Kết bạn" />
-    </Container>
+    <Box className={classes.backgroundBox}>
+      <Container className={classes.container}>
+        <IconTextButton icon={<WriteIcon />} text="Đăng tin mua bán" />
+        <IconTextButton icon={<Mail />} text="Theo dõi" />
+        <IconTextButton icon={<Crown />} text="Kiếm thưởng" />
+        <IconTextButton icon={<Share />} text="Giao lưu chia sẻ" />
+        <IconTextButton icon={<Add />} text="Kết bạn" />
+      </Container>
+    </Box>
   );
 };
 

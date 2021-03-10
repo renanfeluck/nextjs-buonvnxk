@@ -26,6 +26,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+    alignItems: "Center",
   },
   reviewIcon: {
     color: "#FFCE00",

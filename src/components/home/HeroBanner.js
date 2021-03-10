@@ -9,6 +9,9 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  backgroundBox: {
+    backgroundColor: "#00B14F",
+  },
   container: {
     height: "466px",
     backgroundColor: "#00B14F",
@@ -88,28 +91,30 @@ const HeroCard = ({ image, title, subtitle }) => {
 const HeroBanner = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.container}>
-      <Typography variant="h4" className={classes.title}>
-        NGUỒN HÀNG VNXK TRONG TAY BẠN!
-      </Typography>
-      <Button className={classes.heroButton}>
-        + 10.000 mối buôn toàn quốc
-      </Button>
-      <Divider className={classes.divider} />
-      <Typography className={classes.subTitle}>Bạn là ai?</Typography>
-      <Box className={classes.cardBox}>
-        <HeroCard
-          image="/svg/buyer.svg"
-          title="NGƯỜI MUA"
-          subtitle="Bạn đang cần tìm nguồn hàng VNXK tốt?"
-        />
-        <HeroCard
-          image="/svg/buyer.svg"
-          title="NGƯỜI BÁN"
-          subtitle="Bạn là người bán đang có sẵn nguồn hàng?"
-        />
-      </Box>
-    </Container>
+    <Box className={classes.backgroundBox}>
+      <Container className={classes.container}>
+        <Typography variant="h4" className={classes.title}>
+          NGUỒN HÀNG VNXK TRONG TAY BẠN!
+        </Typography>
+        <Button className={classes.heroButton}>
+          + 10.000 mối buôn toàn quốc
+        </Button>
+        <Divider className={classes.divider} />
+        <Typography className={classes.subTitle}>Bạn là ai?</Typography>
+        <Box className={classes.cardBox}>
+          <HeroCard
+            image="/svg/buyer.svg"
+            title="NGƯỜI MUA"
+            subtitle="Bạn đang cần tìm nguồn hàng VNXK tốt?"
+          />
+          <HeroCard
+            image="/svg/buyer.svg"
+            title="NGƯỜI BÁN"
+            subtitle="Bạn là người bán đang có sẵn nguồn hàng?"
+          />
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

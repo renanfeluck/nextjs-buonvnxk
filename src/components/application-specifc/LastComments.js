@@ -22,7 +22,7 @@ const LastComments = () => {
 
       <Box className={classes.commentBox}>
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
@@ -31,7 +31,7 @@ const LastComments = () => {
               date="28/02/2021 15:57"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
@@ -40,7 +40,7 @@ const LastComments = () => {
               date="28/02/2021 15:57"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product2.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
@@ -49,7 +49,7 @@ const LastComments = () => {
               date="28/02/2021 15:57"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <CommentaryBox
               src="/product1.png"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."

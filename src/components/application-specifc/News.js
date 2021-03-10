@@ -6,14 +6,21 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const useStyles = makeStyles({
+  backgroundBox: {
+    background: "#D5D5D5",
+  },
   container: {
     background: "#D5D5D5",
-    padding: "15px 0",
+    paddingTop: "15px",
   },
   gridItemContainer: {
     background: "#ebebeb",
     marginBottom: "8px",
     padding: "15px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     background: "#00B14F",
@@ -24,6 +31,11 @@ const useStyles = makeStyles({
   },
   sliderBox: {
     padding: "0 15px",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    maxWidth: "350px",
+    width: "90%",
   },
 });
 
@@ -39,101 +51,103 @@ const News = () => {
   };
 
   return (
-    <Container className={classes.container}>
-      <Grid container>
-        <Grid item className={classes.gridItemContainer} xs={12} sm={4}>
-          <Title title="TIN CẦN MUA MỚI" black />
-          <Box className={classes.sliderBox}>
-            <Slider {...settings}>
-              <ProductCard
-                src="/shoes.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product1.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product2.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-            </Slider>
-            <Button className={classes.button}> Xem thêm </Button>
-          </Box>
+    <Box className={classes.backgroundBox}>
+      <Container className={classes.container}>
+        <Grid container>
+          <Grid item className={classes.gridItemContainer} xs={12}>
+            <Title title="TIN CẦN MUA MỚI" black />
+            <Box className={classes.sliderBox}>
+              <Slider {...settings}>
+                <ProductCard
+                  src="/shoes.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product1.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product2.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+              </Slider>
+              <Button className={classes.button}> Xem thêm </Button>
+            </Box>
+          </Grid>
+
+          <Grid item className={classes.gridItemContainer} xs={12}>
+            <Title title="TIN CẦN MUA MỚI" black />
+
+            <Box className={classes.sliderBox}>
+              <Slider {...settings}>
+                <ProductCard
+                  src="/product1.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product1.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product2.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+              </Slider>
+              <Button className={classes.button}> Xem thêm </Button>
+            </Box>
+          </Grid>
+
+          <Grid item className={classes.gridItemContainer} xs={12}>
+            <Title title="CHIA SẺ KINH NGHIỆM" black />
+
+            <Box className={classes.sliderBox}>
+              <Slider {...settings}>
+                <ProductCard
+                  src="/product2.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product1.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+                <ProductCard
+                  src="/product2.png"
+                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                  phone="091 491 440"
+                  review="102"
+                />
+              </Slider>
+              <Button className={classes.button}> Xem thêm </Button>
+            </Box>
+          </Grid>
         </Grid>
-
-        <Grid item className={classes.gridItemContainer} xs={12} sm={4}>
-          <Title title="TIN CẦN MUA MỚI" black />
-
-          <Box className={classes.sliderBox}>
-            <Slider {...settings}>
-              <ProductCard
-                src="/product1.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product1.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product2.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-            </Slider>
-            <Button className={classes.button}> Xem thêm </Button>
-          </Box>
-        </Grid>
-
-        <Grid item className={classes.gridItemContainer} xs={12} sm={4}>
-          <Title title="CHIA SẺ KINH NGHIỆM" black />
-
-          <Box className={classes.sliderBox}>
-            <Slider {...settings}>
-              <ProductCard
-                src="/product2.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product1.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-              <ProductCard
-                src="/product2.png"
-                title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                phone="091 491 440"
-                review="102"
-              />
-            </Slider>
-            <Button className={classes.button}> Xem thêm </Button>
-          </Box>
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 

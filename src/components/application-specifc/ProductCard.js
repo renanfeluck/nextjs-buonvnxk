@@ -7,6 +7,8 @@ const useStyles = makeStyles({
     backgroundColor: "#fff",
     padding: "6px",
     margin: "4px",
+    width: "302px",
+    height: "184px",
   },
   cardTitle: {
     fontSize: "12px",
