@@ -6,9 +6,9 @@ const useStyles = makeStyles({
   cardBox: {
     backgroundColor: "#fff",
     padding: "6px",
-    margin: "4px",
     width: "302px",
     height: "184px",
+    maxWidth: "100%",
   },
   cardTitle: {
     fontSize: "12px",
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
     height: "20px",
   },
   phoneText: {
-    fontSize: "14px",
+    fontSize: "12px",
   },
   reviewIcon: {
     color: "#FFCE00",

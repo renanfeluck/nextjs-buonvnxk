@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import FeatureProductCard from "./FeatureProductCard";
 import { products } from "../../mocks/featureProducts";
+import Title from "../design/Title";
 
 const useStyles = makeStyles({
   backgroundBox: {
@@ -36,7 +37,7 @@ const ProductsHighligts = () => {
   return (
     <Box className={classes.backgroundBox}>
       <Container className={classes.container}>
-        <Typography className={classes.title}> HÀNG VNXK NỔI BẬT </Typography>
+        <Title title="HÀNG VNXK NỔI BẬT" black />
         <div className={classes.featuredProductsBox}>
           <Grid container>
             {products.map((product, index) => (

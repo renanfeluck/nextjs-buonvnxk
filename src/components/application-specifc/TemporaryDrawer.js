@@ -63,7 +63,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     flexDirection: "column",
-    height: "100%",
+    height: "calc(100% - 56px)",
   },
   profile: {
     padding: "20px",
