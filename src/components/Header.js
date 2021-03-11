@@ -11,6 +11,8 @@ import BorderColorIcon from "@material-ui/icons/BorderColor";
 import SearchIcon from "@material-ui/icons/Search";
 
 import { fade, makeStyles } from "@material-ui/core/styles";
+import TemporaryDrawer from "./application-specifc/TemporaryDrawer";
+import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,44 +78,54 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  image: {}
+  image: {},
 }));
 
 const Header = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(false);
   return (
-    <AppBar position="static" className={classes.appBar}>
-      <Toolbar className={classes.toolbar}>
-        <div className={classes.iconBox}>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <img className={classes.image} src="/logo.png" alt="Buonvnxk" />
-        </div>
-        <div className={classes.iconBox}>
-          <img src="/svg/crown.svg" alt="" className={classes.icon} />
-          <BorderColorIcon className={classes.icon} />
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon className={classes.icon} />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
+    <>
+      <TemporaryDrawer open={open} setOpen={setOpen} />
+
+      <AppBar position="static" className={classes.appBar}>
+        <Toolbar className={classes.toolbar}>
+          <div className={classes.iconBox}>
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="menu"
+              onClick={() => {
+                setOpen(!open);
+
+                console.log("open", open);
               }}
-              inputProps={{ "aria-label": "search" }}
-            />
+            >
+              <MenuIcon />
+            </IconButton>
+            <img className={classes.image} src="/logo.png" alt="Buonvnxk" />
           </div>
-        </div>
-      </Toolbar>
-    </AppBar>
+          <div className={classes.iconBox}>
+            <img src="/svg/crown.svg" alt="" className={classes.icon} />
+            <BorderColorIcon className={classes.icon} />
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon className={classes.icon} />
+              </div>
+              <InputBase
+                placeholder="Search…"
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                }}
+                inputProps={{ "aria-label": "search" }}
+              />
+            </div>
+          </div>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 };
 

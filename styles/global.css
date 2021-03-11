@@ -1,3 +1,67 @@
 body {
   margin: 0;
 }
+
+:root {
+  --unnamed-color-e74c3c: #e74c3c;
+  --unnamed-color-e1feee: #e1feee;
+  --unnamed-color-ffd200: #ffd200;
+  --unnamed-color-00b14f: #00b14f;
+  --unnamed-color-161616: #161616;
+  --unnamed-color-545454: #545454;
+  --unnamed-color-ababab: #ababab;
+  --unnamed-color-d5d5d5: #d5d5d5;
+  --unnamed-color-ebebeb: #ebebeb;
+  --unnamed-color-f7f7f7: #f7f7f7;
+  --unnamed-color-ffffff: #ffffff;
+
+  /* Font/text values */
+  --unnamed-font-family-montserrat: Montserrat;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-character-spacing-0-15: 0.15px;
+  --unnamed-character-spacing-0-11: 0.11px;
+  --unnamed-character-spacing-0-12: 0.12px;
+  --unnamed-line-spacing-24: 24px;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+  font-family: var(--unnamed-font-family-montserrat);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0-11);
+  color: var(--unnamed-color-545454);
+}
+.unnamed-character-style-2 {
+  font-family: var(--unnamed-font-family-montserrat);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0-12);
+  color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-3 {
+  font-family: var(--unnamed-font-family-montserrat);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0-15);
+  color: var(--unnamed-color-ffffff);
+}
+
+.MuiBackdrop-root {
+  margin-top: 56px;
+}
+
+.MuiDrawer-paper {
+  margin-top: 56px;
+}

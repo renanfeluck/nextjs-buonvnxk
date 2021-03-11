@@ -8,10 +8,16 @@ const useStyles = makeStyles({
   },
 });
 
-const ProfilePicture = ({ src }) => {
+const ProfilePicture = ({ src, width, height }) => {
   const classes = useStyles();
 
-  return <img className={classes.profilePicture} src={src} />;
+  return (
+    <img
+      className={classes.profilePicture}
+      src={src}
+      style={{ width: width ?? "", height: height ?? "" }}
+    />
+  );
 };
 
 export default ProfilePicture;
