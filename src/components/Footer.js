@@ -17,6 +17,7 @@ const useStyles = makeStyles({
   container: {
     backgroundColor: "#000",
     color: "#fff",
+    marginTop: "16px",
   },
   footerImage: {
     width: "322px",

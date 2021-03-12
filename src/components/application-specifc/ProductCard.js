@@ -55,11 +55,21 @@ const useStyles = makeStyles({
   },
 });
 
-const ProductCard = ({ src, title, description, review, phone }) => {
+const ProductCard = ({
+  src,
+  title,
+  description,
+  review,
+  phone,
+  background,
+}) => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.cardBox}>
+    <Box
+      className={classes.cardBox}
+      style={{ background: background ? background : "" }}
+    >
       <Grid container>
         <Grid item xs={4}>
           <img className={classes.image} src={src} alt="" />
