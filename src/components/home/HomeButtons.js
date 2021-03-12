@@ -56,15 +56,13 @@ const HomeButtons = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.backgroundBox}>
-      <Container className={classes.container}>
-        <IconTextButton icon={<WriteIcon />} text="Đăng tin mua bán" />
-        <IconTextButton icon={<Mail />} text="Theo dõi" />
-        <IconTextButton icon={<Crown />} text="Kiếm thưởng" />
-        <IconTextButton icon={<Share />} text="Giao lưu chia sẻ" />
-        <IconTextButton icon={<Add />} text="Kết bạn" />
-      </Container>
-    </Box>
+    <Container className={classes.container}>
+      <IconTextButton icon={<WriteIcon />} text="Đăng tin mua bán" />
+      <IconTextButton icon={<Mail />} text="Theo dõi" />
+      <IconTextButton icon={<Crown />} text="Kiếm thưởng" />
+      <IconTextButton icon={<Share />} text="Giao lưu chia sẻ" />
+      <IconTextButton icon={<Add />} text="Kết bạn" />
+    </Container>
   );
 };
 

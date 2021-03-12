@@ -16,40 +16,38 @@ const TypicalProducts = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.backgroundBox}>
-      <Container className={classes.container}>
-        <Title title="MỐI HÀNG TIÊU BIỂU" />
-        <Grid container>
-          <Grid item xs={12} sm={4}>
-            <ProductCard
-              src="/product1.png"
-              title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-              description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-              phone="091 491 440"
-              review="102"
-            />
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <ProductCard
-              src="/product1.png"
-              title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-              description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-              phone="091 491 440"
-              review="102"
-            />
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <ProductCard
-              src="/product1.png"
-              title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-              description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-              phone="091 491 440"
-              review="102"
-            />
-          </Grid>
+    <Container className={classes.container}>
+      <Title title="MỐI HÀNG TIÊU BIỂU" />
+      <Grid container>
+        <Grid item xs={12} sm={4}>
+          <ProductCard
+            src="/product1.png"
+            title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+            description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+            phone="091 491 440"
+            review="102"
+          />
         </Grid>
-      </Container>
-    </Box>
+        <Grid item xs={12} sm={4}>
+          <ProductCard
+            src="/product1.png"
+            title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+            description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+            phone="091 491 440"
+            review="102"
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <ProductCard
+            src="/product1.png"
+            title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+            description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+            phone="091 491 440"
+            review="102"
+          />
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 

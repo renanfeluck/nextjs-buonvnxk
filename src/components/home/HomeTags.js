@@ -49,13 +49,11 @@ const HomeTags = () => {
   ];
 
   return (
-    <Box className={classes.backgroundBox}>
-      <Container className={classes.container}>
-        {tags.map((tag, index) => {
-          return <Box className={classes.cardBox}>{tag}</Box>;
-        })}
-      </Container>
-    </Box>
+    <Container className={classes.container}>
+      {tags.map((tag, index) => {
+        return <Box className={classes.cardBox}>{tag}</Box>;
+      })}
+    </Container>
   );
 };
 

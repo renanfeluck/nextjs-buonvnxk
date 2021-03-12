@@ -28,7 +28,7 @@ export default function Home() {
       <Header />
       <HeroBanner />
       <ProductsHighligts />
-      <Box className={classes.portifoliContainer}>
+      <Container className={classes.portifoliContainer}>
         <Grid container>
           <Grid item xs={12} md={6} lg={3}>
             <Portifolio />
@@ -43,22 +43,20 @@ export default function Home() {
             <LastComments />
           </Grid>
         </Grid>
-      </Box>
+      </Container>
       <TypicalProducts />
-      <Box className={classes.portifoliContainer}>
-        <Container className={classes.portifoliContainer}>
-          <Grid container>
-            <Grid item xs={12} md={8}>
-              <News />
-            </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Review />
-              <FindWhatYouNeed />
-            </Grid>
+      <Container className={classes.portifoliContainer}>
+        <Grid container>
+          <Grid item xs={12} md={8}>
+            <News />
           </Grid>
-        </Container>
-      </Box>
+
+          <Grid item xs={12} md={4}>
+            <Review />
+            <FindWhatYouNeed />
+          </Grid>
+        </Grid>
+      </Container>
 
       <Grid container>
         <Grid item xs={12}>

@@ -35,32 +35,30 @@ const ProductsHighligts = () => {
   const classes = useStyles();
   console.log("products", products);
   return (
-    <Box className={classes.backgroundBox}>
-      <Container className={classes.container}>
-        <Title title="HÀNG VNXK NỔI BẬT" black />
-        <div className={classes.featuredProductsBox}>
-          <Grid container>
-            {products.map((product, index) => (
-              <Grid
-                key={index}
-                className={classes.featuredProductCard}
-                item
-                sm={4}
-                xs={12}
-              >
-                <FeatureProductCard
-                  image1={product.image1}
-                  image2={product.image2}
-                  title={product.title}
-                  code={product.code}
-                  description={product.description}
-                />
-              </Grid>
-            ))}
-          </Grid>
-        </div>
-      </Container>
-    </Box>
+    <Container className={classes.container}>
+      <Title title="HÀNG VNXK NỔI BẬT" black />
+      <div className={classes.featuredProductsBox}>
+        <Grid container>
+          {products.map((product, index) => (
+            <Grid
+              key={index}
+              className={classes.featuredProductCard}
+              item
+              sm={4}
+              xs={12}
+            >
+              <FeatureProductCard
+                image1={product.image1}
+                image2={product.image2}
+                title={product.title}
+                code={product.code}
+                description={product.description}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+    </Container>
   );
 };
 
