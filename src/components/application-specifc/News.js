@@ -37,6 +37,9 @@ const useStyles = makeStyles({
     maxWidth: "350px",
     width: "90%",
   },
+  margin: {
+    marginBottom: "8px",
+  },
 });
 
 const News = () => {
@@ -120,27 +123,66 @@ const News = () => {
 
             <Box className={classes.sliderBox}>
               <Slider {...settings}>
-                <ProductCard
-                  src="/product2.png"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product1.png"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product2.png"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
+                <Box>
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product2.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product1.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product2.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+                </Box>
+
+                <Box>
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product2.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product1.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+                  <Box className={classes.margin}>
+                    <ProductCard
+                      src="/product2.png"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Box>
+                </Box>
               </Slider>
               <Button className={classes.button}> Xem thêm </Button>
             </Box>

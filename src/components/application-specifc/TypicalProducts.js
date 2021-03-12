@@ -18,7 +18,7 @@ const TypicalProducts = () => {
   return (
     <Container className={classes.container}>
       <Title title="MỐI HÀNG TIÊU BIỂU" />
-      <Grid container>
+      <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <ProductCard
             src="/product1.png"

@@ -27,6 +27,7 @@ const useStyles = makeStyles({
   commentTitleBox: {
     display: "flex",
     alignItems: "center",
+    height: "56px",
   },
   commentDescriptionBox: {
     display: "flex",
@@ -57,9 +58,11 @@ const CommentaryBox = ({ src, comment, count, description, date }) => {
       <Box className={classes.commentTitleBox}>
         <ProfilePicture src={src} />
         <Typography className={classes.comment}> {comment} </Typography>
-        <Box className={classes.countBox}>
-          <Typography> +({count}) </Typography>
-        </Box>
+        {!description && (
+          <Box className={classes.countBox}>
+            <Typography> +({count}) </Typography>
+          </Box>
+        )}
       </Box>
       {description && date && (
         <Box className={classes.commentDescriptionBox}>
