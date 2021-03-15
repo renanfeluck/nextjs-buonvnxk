@@ -83,7 +83,7 @@ const CategoryDetails = () => {
       <Box className={classes.productBox}>
         <Box className={classes.product}>
           <ProductCard
-            src="/shoes.png"
+            src="/shoes.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"

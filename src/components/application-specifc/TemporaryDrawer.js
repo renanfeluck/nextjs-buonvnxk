@@ -153,7 +153,7 @@ export default function TemporaryDrawer({ open, setOpen }) {
             </ListItem>
 
             <ListItem className={classes.profile}>
-              <ProfilePicture src="./shoes.png" width="60px" height="60px" />
+              <ProfilePicture src="./shoes.jpg" width="60px" height="60px" />
               <Typography className={classes.name}>
                 Nguyễn Thị Trung Đức
               </Typography>

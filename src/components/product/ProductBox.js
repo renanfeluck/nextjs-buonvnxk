@@ -82,10 +82,10 @@ const ProductBox = () => {
   const images = [
     "/product1.png",
     "/product2.png",
-    "/shoes.png",
+    "/shoes.jpg",
     "/product1.png",
     "/product2.png",
-    "/shoes.png",
+    "/shoes.jpg",
     "/product1.png",
     "/product2.png",
   ];

@@ -10,6 +10,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Title from "../design/Title";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
 const useStyles = makeStyles({
   container: {
@@ -34,9 +35,13 @@ const useStyles = makeStyles({
     width: "calc(100% - 92px)",
     margin: "auto",
     padding: "15px 46px",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
   },
   accordion: {
     margin: "0 !important",
+    width: "302px",
   },
   accordionDetails: {
     display: "flex",
@@ -76,16 +81,16 @@ const Portifolio = () => {
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
             <Typography className={classes.details}>
-              Áo sơ mi Nam VNXK
+              <ArrowRightIcon /> Áo sơ mi Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Quần Jean Nam VNXK
+              <ArrowRightIcon /> Quần Jean Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Đồng hồ Nam VNXK
+              <ArrowRightIcon /> Đồng hồ Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Giày Nam các loại VNXK
+              <ArrowRightIcon /> Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -102,16 +107,16 @@ const Portifolio = () => {
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
             <Typography className={classes.details}>
-              Áo sơ mi Nam VNXK
+              <ArrowRightIcon /> Áo sơ mi Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Quần Jean Nam VNXK
+              <ArrowRightIcon /> Quần Jean Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Đồng hồ Nam VNXK
+              <ArrowRightIcon /> Đồng hồ Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Giày Nam các loại VNXK
+              <ArrowRightIcon /> Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -128,16 +133,16 @@ const Portifolio = () => {
           </AccordionSummary>
           <AccordionDetails className={classes.accordionDetails}>
             <Typography className={classes.details}>
-              Áo sơ mi Nam VNXK
+              <ArrowRightIcon /> Áo sơ mi Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Quần Jean Nam VNXK
+              <ArrowRightIcon /> Quần Jean Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Đồng hồ Nam VNXK
+              <ArrowRightIcon /> Đồng hồ Nam VNXK
             </Typography>
             <Typography className={classes.details}>
-              Giày Nam các loại VNXK
+              <ArrowRightIcon /> Giày Nam các loại VNXK
             </Typography>
           </AccordionDetails>
         </Accordion>

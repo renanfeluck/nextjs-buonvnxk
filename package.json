@@ -12,6 +12,7 @@
     "@material-ui/icons": "^4.11.2",
     "json-loader": "^0.5.7",
     "next": "10.0.7",
+    "next-images": "^1.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-slick": "^0.28.1",

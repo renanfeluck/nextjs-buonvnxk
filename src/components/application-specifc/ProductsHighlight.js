@@ -21,6 +21,7 @@ const useStyles = makeStyles({
   container: {
     background: "#EBEBEB",
     justifyContent: "space-around",
+    paddingTop: "26px",
   },
   featuredProductsBox: {},
   featuredProductCard: {

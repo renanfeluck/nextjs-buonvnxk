@@ -10,11 +10,13 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   backgroundBox: {
-    backgroundColor: "#00B14F",
+    background: "url(/shoes.jpg)",
+    backgroundSize: "cover",
+    backgroundBlendMode: "multiply",
+    boxShadow: "inset 0 0 0 2000px rgba(0, 177, 79, 0.8)",
   },
   container: {
     height: "466px",
-    backgroundColor: "#00B14F",
   },
   title: {
     fontSize: "24px",
@@ -24,17 +26,21 @@ const useStyles = makeStyles((theme) => ({
   },
   subTitle: {
     fontSize: "16px",
-    color: "#fff",
     textAlign: "center",
     paddingTop: "35px",
+    font: "normal normal medium 16px/24px Montserrat",
+    letterSpacing: "0.12px",
+    color: "#FFFFFF",
   },
   heroButton: {
     backgroundColor: "#FFD200",
-    fontSize: 15,
+    fontSize: "15px",
     fontFamily: "Montserrat-Medium",
     margin: "35px auto",
     width: "302px",
     display: "block",
+    background: "#FFD200 0% 0% no-repeat padding-box",
+    boxShadow: "0px 0px 6px #FFD200",
   },
   divider: {
     backgroundColor: "#fff",
@@ -63,8 +69,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "16px",
   },
   heroCardTitle: {
-    color: "#161616",
     fontSize: "12px",
+    textAlign: "center",
+    font: "normal normal bold 12px/21px Montserrat",
+    letterSpacing: "0.09px",
+    color: "#161616",
+    textTransform: "uppercase",
+    opacity: "1",
   },
   heroCardSubtitle: {
     color: "#545454",
@@ -108,7 +119,7 @@ const HeroBanner = () => {
             subtitle="Bạn đang cần tìm nguồn hàng VNXK tốt?"
           />
           <HeroCard
-            image="/svg/buyer.svg"
+            image="/svg/MoneyHands.svg"
             title="NGƯỜI BÁN"
             subtitle="Bạn là người bán đang có sẵn nguồn hàng?"
           />
