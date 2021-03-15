@@ -3,7 +3,6 @@ import ProfilePicture from "../design/ProfilePicture";
 
 const useStyles = makeStyles({
   commentBox: {
-    // padding: "8px",
     display: "flex",
     alignItems: "center",
     minHeight: "56px",
@@ -20,6 +19,16 @@ const useStyles = makeStyles({
     fontSize: "12px",
     minWidth: "50px",
     height: "100%",
+    display: "flex",
+    verticalAlign: "center",
+    alignItems: "center",
+  },
+  count: {
+    textAlign: "center",
+    font: "italic normal normal 12px/20px Montserrat",
+    letterSpacing: "0.09px",
+    padding: "7px",
+    height: "42px",
     display: "flex",
     verticalAlign: "center",
     alignItems: "center",
@@ -48,6 +57,9 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
   },
+  picture: {
+    paddingLeft: "10px",
+  },
 });
 
 const CommentaryBox = ({ src, comment, count, description, date }) => {
@@ -56,11 +68,13 @@ const CommentaryBox = ({ src, comment, count, description, date }) => {
   return (
     <Box className={classes.commentBox}>
       <Box className={classes.commentTitleBox}>
-        <ProfilePicture src={src} />
+        <Box className={classes.picture}>
+          <ProfilePicture src={src} width="40px" height="40px" />
+        </Box>
         <Typography className={classes.comment}> {comment} </Typography>
         {!description && (
           <Box className={classes.countBox}>
-            <Typography> +({count}) </Typography>
+            <Typography className={classes.count}> +({count}) </Typography>
           </Box>
         )}
       </Box>

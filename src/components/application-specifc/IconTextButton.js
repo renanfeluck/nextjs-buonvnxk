@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-const IconTextButton = ({ icon, text, background, color }) => {
+const IconTextButton = ({ icon, text, background, color, selected }) => {
   const classes = useStyles();
 
   return (
@@ -30,6 +30,7 @@ const IconTextButton = ({ icon, text, background, color }) => {
       style={{
         backgroundColor: background ? background : "",
         color: color ? color : "",
+        boxShadow: selected ? "rgb(255 210 0) 0px 0px 17px" : "",
       }}
     >
       <Typography className={classes.iconSpan} variant="span">

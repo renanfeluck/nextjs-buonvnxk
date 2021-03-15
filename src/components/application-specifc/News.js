@@ -4,6 +4,8 @@ import ProductCard from "./ProductCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
 
 const useStyles = makeStyles({
   backgroundBox: {
@@ -25,9 +27,15 @@ const useStyles = makeStyles({
   button: {
     background: "#00B14F",
     color: "#fff",
-    padding: "12px",
+    padding: "6px 8px",
     margin: "18px auto",
     display: "block",
+    boxShadow: "0px 3px 6px #00000029",
+    maxHeight: "37px",
+    font: "normal normal medium 14px/24px Montserrat",
+    letterSpacing: "0.11px",
+    color: "#FFFFFF",
+    textTransform: "none",
   },
   sliderBox: {
     padding: "0 15px",
@@ -40,10 +48,52 @@ const useStyles = makeStyles({
   margin: {
     marginBottom: "8px",
   },
+  navigationIcon: {
+    display: "flex",
+  },
 });
 
 const News = () => {
   const classes = useStyles();
+
+  function NextArrow(props) {
+    const { style, onClick } = props;
+    return (
+      <div
+        style={{
+          ...style,
+          display: "block",
+          position: "absolute",
+          right: "-25px",
+          top: "50%",
+          transform: "translateY(-50%)",
+        }}
+        onClick={onClick}
+      >
+        <NavigateNextIcon className={classes.navigationIcon} />
+      </div>
+    );
+  }
+
+  function PrevArrow(props) {
+    const { style, onClick } = props;
+    return (
+      <div
+        // className={className
+        style={{
+          ...style,
+          display: "block",
+          position: "absolute",
+          left: "-25px",
+          top: "50%",
+          transform: "translateY(-50%)",
+        }}
+        onClick={onClick}
+      >
+        <NavigateBeforeIcon className={classes.navigationIcon} />
+      </div>
+    );
+  }
 
   const settings = {
     dots: false,
@@ -51,6 +101,8 @@ const News = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (

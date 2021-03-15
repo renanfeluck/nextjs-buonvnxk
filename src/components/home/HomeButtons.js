@@ -59,7 +59,7 @@ const HomeButtons = () => {
     <Container className={classes.container}>
       <IconTextButton icon={<WriteIcon />} text="Đăng tin mua bán" />
       <IconTextButton icon={<Mail />} text="Theo dõi" />
-      <IconTextButton icon={<Crown />} text="Kiếm thưởng" />
+      <IconTextButton icon={<Crown />} text="Kiếm thưởng" selected />
       <IconTextButton icon={<Share />} text="Giao lưu chia sẻ" />
       <IconTextButton icon={<Add />} text="Kết bạn" />
     </Container>

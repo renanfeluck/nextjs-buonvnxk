@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     backgroundColor: "#fff",
     padding: "6px",
     width: "302px",
-    height: "184px",
+    height: "176px",
     maxWidth: "100%",
     margin: "auto",
   },
@@ -53,6 +53,10 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
+  gridContainer: {
+    height: "100%",
+    alignItems: "center",
+  },
 });
 
 const ProductCard = ({
@@ -70,7 +74,7 @@ const ProductCard = ({
       className={classes.cardBox}
       style={{ background: background ? background : "" }}
     >
-      <Grid container>
+      <Grid container className={classes.gridContainer}>
         <Grid item xs={4}>
           <img className={classes.image} src={src} alt="" />
         </Grid>

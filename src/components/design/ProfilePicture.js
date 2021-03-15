@@ -15,7 +15,12 @@ const ProfilePicture = ({ src, width, height }) => {
     <img
       className={classes.profilePicture}
       src={src}
-      style={{ width: width ?? "", height: height ?? "" }}
+      style={{
+        width: width ?? "",
+        height: height ?? "",
+        minHeight: height ?? "",
+        minWidth: width ?? "",
+      }}
     />
   );
 };

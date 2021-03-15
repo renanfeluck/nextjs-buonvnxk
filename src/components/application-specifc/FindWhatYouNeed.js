@@ -22,12 +22,13 @@ const useStyles = makeStyles({
   },
   select: {
     width: "300px",
-    height: "40px",
+    maxHeight: "40px",
     backgroundColor: "#ebebeb",
     color: "#000",
   },
   input: {
     width: "300px",
+    maxHeight: "40px",
   },
   fieldBox: {
     margin: "15px 0",
@@ -47,6 +48,14 @@ const useStyles = makeStyles({
     color: "#fff",
     width: "146px",
     height: "37px",
+    boxShadow: "0px 3px 6px #00000029",
+    textTransform: "none",
+    textAlign: "center",
+    font: "normal normal medium 14px/24px Montserrat",
+    letterSpacing: "0.11px",
+  },
+  formControl: {
+    maxHeight: "40px",
   },
 });
 
@@ -64,6 +73,12 @@ const FindWhatYouNeed = () => {
           variant="filled"
           label="Địa điểm"
           className={classes.input}
+          inputProps={{
+            style: {
+              height: "40px",
+              padding: "0 14px",
+            },
+          }}
         />
       </Box>
       <Box className={classes.fieldBox}>

@@ -64,6 +64,16 @@ const useStyles = makeStyles({
   personIcon: {
     width: "20px",
     height: "20px",
+    marginRight: "6px",
+  },
+  personText: {
+    fontFamily: "Montserrat",
+    letterSpacing: "0.09px",
+    color: "#FFFFFF",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   onlineText: {
     letterSpacing: "var(--unnamed-character-spacing-0-12)",
@@ -73,6 +83,8 @@ const useStyles = makeStyles({
     letterSpacing: "0.12px",
     color: "#FFFFFF",
     opacity: "1",
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
   },
   name: {
     font:
@@ -83,6 +95,7 @@ const useStyles = makeStyles({
     letterSpacing: "0.09px",
     color: "#FFFFFF",
     opacity: "1",
+    fontFamily: "Montserrat",
   },
 });
 
@@ -100,11 +113,11 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography>
-                <PersonPinIcon className={classes.personIcon} /> 11.162 khách
-                hàng
+              <Typography className={classes.personText}>
+                <PersonPinIcon className={classes.personIcon} />
+                11.162 khách hàng
               </Typography>
-              <Typography>
+              <Typography className={classes.personText}>
                 <PersonPinIcon className={classes.personIcon} /> 3 thành viên
               </Typography>
             </Grid>
@@ -182,6 +195,7 @@ const Footer = () => {
             text="Zalo: 0914 585 491"
             background="#0180C7"
             color="#fff"
+            selected
           />
           <IconTextButton
             icon={<MobileScreenShareIcon />}
