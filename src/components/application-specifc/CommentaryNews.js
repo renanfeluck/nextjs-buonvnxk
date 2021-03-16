@@ -52,11 +52,13 @@ const CommentaryNews = () => {
             />
           </Grid>
 
-          <CommentaryBox
-            src="/product2.jpg"
-            comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
-            count="159"
-          />
+          <Grid item xs={12}>
+            <CommentaryBox
+              src="/product2.jpg"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+            />
+          </Grid>
         </Grid>
       </Box>
     </Container>

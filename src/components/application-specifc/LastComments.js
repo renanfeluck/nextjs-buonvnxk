@@ -59,13 +59,15 @@ const LastComments = () => {
             />
           </Grid>
 
-          <CommentaryBox
-            src="/product2.jpg"
-            comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
-            count="159"
-            description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
-            date="28/02/2021 15:57"
-          />
+          <Grid item xs={12}>
+            <CommentaryBox
+              src="/product2.jpg"
+              comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+              count="159"
+              description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
+              date="28/02/2021 15:57"
+            />
+          </Grid>
         </Grid>
       </Box>
     </Container>
