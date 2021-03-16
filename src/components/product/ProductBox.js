@@ -80,14 +80,14 @@ const ProductBox = () => {
   const classes = useStyles();
 
   const images = [
-    "/product1.png",
-    "/product2.png",
+    "/product1.jpg",
+    "/product2.jpg",
     "/shoes.jpg",
-    "/product1.png",
-    "/product2.png",
+    "/product1.jpg",
+    "/product2.jpg",
     "/shoes.jpg",
-    "/product1.png",
-    "/product2.png",
+    "/product1.jpg",
+    "/product2.jpg",
   ];
 
   return (
@@ -131,7 +131,7 @@ const ProductBox = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <img className={classes.mainImage} src="/product1.png" />
+          <img className={classes.mainImage} src="/product1.jpg" />
         </Grid>
 
         {images.map((product) => (

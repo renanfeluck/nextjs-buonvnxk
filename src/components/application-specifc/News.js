@@ -121,14 +121,14 @@ const News = () => {
                   review="102"
                 />
                 <ProductCard
-                  src="/product1.png"
+                  src="/product1.jpg"
                   title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                   description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                   phone="091 491 440"
                   review="102"
                 />
                 <ProductCard
-                  src="/product2.png"
+                  src="/product2.jpg"
                   title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                   description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                   phone="091 491 440"
@@ -145,21 +145,21 @@ const News = () => {
             <Box className={classes.sliderBox}>
               <Slider {...settings}>
                 <ProductCard
-                  src="/product1.png"
+                  src="/product1.jpg"
                   title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                   description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                   phone="091 491 440"
                   review="102"
                 />
                 <ProductCard
-                  src="/product1.png"
+                  src="/product1.jpg"
                   title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                   description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                   phone="091 491 440"
                   review="102"
                 />
                 <ProductCard
-                  src="/product2.png"
+                  src="/product2.jpg"
                   title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                   description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                   phone="091 491 440"
@@ -178,7 +178,7 @@ const News = () => {
                 <Box>
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product2.png"
+                      src="/product2.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"
@@ -188,7 +188,7 @@ const News = () => {
 
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product1.png"
+                      src="/product1.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"
@@ -197,7 +197,7 @@ const News = () => {
                   </Box>
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product2.png"
+                      src="/product2.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"
@@ -209,7 +209,7 @@ const News = () => {
                 <Box>
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product2.png"
+                      src="/product2.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"
@@ -218,7 +218,7 @@ const News = () => {
                   </Box>
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product1.png"
+                      src="/product1.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"
@@ -227,7 +227,7 @@ const News = () => {
                   </Box>
                   <Box className={classes.margin}>
                     <ProductCard
-                      src="/product2.png"
+                      src="/product2.jpg"
                       title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
                       description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
                       phone="091 491 440"

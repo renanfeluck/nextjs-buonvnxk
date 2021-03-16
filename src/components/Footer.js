@@ -12,12 +12,20 @@ import PersonPinIcon from "@material-ui/icons/PersonPin";
 
 const useStyles = makeStyles({
   backgroundBox: {
-    backgroundColor: "#000",
+    // backgroundColor: "#000",
+    // background: "url(/bgfooter.jpg)",
+    // backgroundSize: "cover",
+    // backgroundBlendMode: "multiply",
+    // boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.8)",
   },
   container: {
-    backgroundColor: "#000",
+    // backgroundColor: "#000",
     color: "#fff",
     marginTop: "16px",
+    background: "url(/bgfooter.jpg)",
+    backgroundSize: "cover",
+    backgroundBlendMode: "multiply",
+    boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.8)",
   },
   footerImage: {
     width: "322px",

@@ -1,5 +1,6 @@
 import {
   AppBar,
+  Box,
   Button,
   IconButton,
   Toolbar,
@@ -85,10 +86,10 @@ const Header = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <Box style={{ height: "56px" }}>
       <TemporaryDrawer open={open} setOpen={setOpen} />
 
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div className={classes.iconBox}>
             <IconButton
@@ -125,7 +126,7 @@ const Header = () => {
           </div>
         </Toolbar>
       </AppBar>
-    </>
+    </Box>
   );
 };
 

@@ -21,7 +21,7 @@ const TypicalProducts = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <ProductCard
-            src="/product1.png"
+            src="/product1.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"
@@ -30,7 +30,7 @@ const TypicalProducts = () => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <ProductCard
-            src="/product1.png"
+            src="/product1.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"
@@ -39,7 +39,7 @@ const TypicalProducts = () => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <ProductCard
-            src="/product1.png"
+            src="/product1.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"

@@ -67,7 +67,7 @@ const ProductComments = () => {
           </Grid>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product1.png"
+              src="/product1.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
               description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
@@ -76,7 +76,7 @@ const ProductComments = () => {
           </Grid>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product1.png"
+              src="/product1.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
               description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"

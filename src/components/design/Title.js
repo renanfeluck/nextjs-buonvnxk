@@ -25,14 +25,14 @@ const useStyles = makeStyles({
     backgroundColor: "#fff",
     width: "80px",
     display: "block",
-    margin: "15px auto",
+    margin: "5px auto 18px",
     height: "2px",
   },
   dividerBlack: {
     backgroundColor: "#00b14f",
     width: "80px",
     display: "block",
-    margin: "15px auto",
+    margin: "5px auto 18px",
     height: "2px",
   },
 });

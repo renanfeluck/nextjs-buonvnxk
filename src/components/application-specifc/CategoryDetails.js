@@ -73,10 +73,10 @@ const CategoryDetails = () => {
 
       <Box className={classes.sliderBox}>
         <Slider {...settings}>
-          <SmallCard src="/product1.png" title="TÚI XÁCH PHỤ KIỆN" />
-          <SmallCard src="/product2.png" title="ÁO THUN MÀU ĐỎ" />
-          <SmallCard src="/product1.png" title="VÁY ĐẦM DẠ HỘI" />
-          <SmallCard src="/product1.png" title="VÁY" />
+          <SmallCard src="/product1.jpg" title="TÚI XÁCH PHỤ KIỆN" />
+          <SmallCard src="/product2.jpg" title="ÁO THUN MÀU ĐỎ" />
+          <SmallCard src="/product1.jpg" title="VÁY ĐẦM DẠ HỘI" />
+          <SmallCard src="/product1.jpg" title="VÁY" />
         </Slider>
       </Box>
 
@@ -93,7 +93,7 @@ const CategoryDetails = () => {
         </Box>
         <Box className={classes.product}>
           <ProductCard
-            src="/product1.png"
+            src="/product1.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"
@@ -103,7 +103,7 @@ const CategoryDetails = () => {
         </Box>
         <Box className={classes.product}>
           <ProductCard
-            src="/product2.png"
+            src="/product2.jpg"
             title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
             description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
             phone="091 491 440"

@@ -25,35 +25,35 @@ const CommentaryNews = () => {
         <Grid container>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product1.png"
+              src="/product1.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product1.png"
+              src="/product1.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product2.png"
+              src="/product2.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
           <Grid item xs={12}>
             <CommentaryBox
-              src="/product1.png"
+              src="/product1.jpg"
               comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
               count="159"
             />
           </Grid>
 
           <CommentaryBox
-            src="/product2.png"
+            src="/product2.jpg"
             comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
             count="159"
           />
