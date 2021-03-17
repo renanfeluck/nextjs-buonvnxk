@@ -12,11 +12,13 @@ const useStyles = makeStyles({
     color: "#fff",
     fontSize: "20px",
     textAlign: "center",
+    fontWeight: "bold",
   },
   titleBlack: {
     color: "#161616",
     fontSize: "20px",
     textAlign: "center",
+    fontWeight: "bold",
   },
   titleBox: {
     display: "block",

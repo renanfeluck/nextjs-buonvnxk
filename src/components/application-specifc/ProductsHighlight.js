@@ -19,14 +19,16 @@ const useStyles = makeStyles({
     textAlign: "center",
   },
   container: {
-    background: "#EBEBEB",
     justifyContent: "space-around",
     paddingTop: "26px",
+    paddingLeft: "0",
+    paddingRight: "0",
   },
   featuredProductsBox: {},
   featuredProductCard: {
     marginBottom: "8px",
-    backgroundColor: "transparent",
+    paddingBottom: "8px",
+    backgroundColor: "#fff",
     display: "flex",
     justifyContent: "center",
   },
@@ -39,7 +41,7 @@ const ProductsHighligts = () => {
     <Container className={classes.container}>
       <Title title="HÀNG VNXK NỔI BẬT" black />
       <div className={classes.featuredProductsBox}>
-        <Grid container>
+        <Grid container style={{ backgroundColor: "#ebebeb" }}>
           {products.map((product, index) => (
             <Grid
               key={index}
@@ -54,6 +56,7 @@ const ProductsHighligts = () => {
                 title={product.title}
                 code={product.code}
                 description={product.description}
+                image2Featured
               />
             </Grid>
           ))}

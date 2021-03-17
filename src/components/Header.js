@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: 0,
     color: "#000",
   },
   title: {
@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: "#000",
     marginRight: "15px",
+    width: "16px",
+    height: "16px",
   },
   search: {
     position: "relative",
@@ -105,23 +107,23 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
-            <img className={classes.image} src="/logo.png" alt="Buonvnxk" />
+            <img className={classes.image} src="/svg/logo.svg" alt="Buonvnxk" />
           </div>
           <div className={classes.iconBox}>
             <img src="/svg/crown.svg" alt="" className={classes.icon} />
             <BorderColorIcon className={classes.icon} />
+            <SearchIcon className={classes.icon} />
             <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon className={classes.icon} />
-              </div>
-              <InputBase
+              {/* <div className={classes.searchIcon}> */}
+              {/* </div> */}
+              {/* <InputBase
                 placeholder="Search…"
                 classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput,
                 }}
                 inputProps={{ "aria-label": "search" }}
-              />
+              /> */}
             </div>
           </div>
         </Toolbar>

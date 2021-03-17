@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     textAlign: "center",
     paddingTop: "35px",
+    fontWeight: "bold",
   },
   subTitle: {
     fontSize: "16px",
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     background: "#FFD200 0% 0% no-repeat padding-box",
     boxShadow: "0px 0px 6px #FFD200",
+    fontWeight: "bold",
   },
   divider: {
     backgroundColor: "#fff",
@@ -76,6 +78,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#161616",
     textTransform: "uppercase",
     opacity: "1",
+    fontWeight: "bold",
   },
   heroCardSubtitle: {
     color: "#545454",

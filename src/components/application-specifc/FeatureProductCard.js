@@ -1,4 +1,4 @@
-import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import StarIcon from "@material-ui/icons/Star";
 
 const useStyles = makeStyles({
@@ -6,6 +6,7 @@ const useStyles = makeStyles({
     display: "flex",
     maxWidth: "100%",
     marginBottom: "24px",
+    position: "relative",
   },
   featureProductImage: {
     maxWidth: "50%",
@@ -43,6 +44,7 @@ const useStyles = makeStyles({
     fontFamily: "Montserrat-Medium",
     color: "#fff",
     lineHeight: 1,
+    fontWeight: "bold",
   },
   reviewCount: {
     fontSize: "12px",
@@ -63,11 +65,25 @@ const useStyles = makeStyles({
     maxWidth: "375px",
     backgroundColor: "#fff",
   },
+  greenText: {
+    backgroundColor: "#00B14F",
+    width: "20px",
+    position: "absolute",
+    bottom: "0",
+    textAlign: "center",
+    font: "normal normal normal 12px/24px Montserrat",
+    letterSpacing: "0.09px",
+    color: "#FFFFFF",
+    opacity: "1",
+    width: "50%",
+  },
 });
 
 const FeatureProductCard = ({
   image1,
   image2,
+  image1Featured,
+  image2Featured,
   title,
   code,
   review,
@@ -79,6 +95,15 @@ const FeatureProductCard = ({
       <Grid item className={classes.featureProductImageBox} xs={12}>
         <img className={classes.featureProductImage} src={image1} />
         <img className={classes.featureProductImage} src={image2} />
+        <Typography
+          className={classes.greenText}
+          style={{
+            display: !image1Featured && !image2Featured ? "none" : "block",
+            right: image2Featured ? "0" : "",
+          }}
+        >
+          Đối tác được tài trợ
+        </Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography className={classes.featureProductTitle}>{title}</Typography>
