@@ -5,13 +5,14 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core";
+import WarningIcon from "@material-ui/icons/Warning";
 
 const useStyles = makeStyles({
   backgroundBox: {},
   container: {
-    height: "188px",
+    height: "204px",
     backgroundColor: "#00B14F",
-    padding: "0 56px",
+    padding: "0 30px",
     background: "url(/product-bg.png)",
     backgroundSize: "cover",
     backgroundBlendMode: "multiply",
@@ -19,12 +20,13 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    paddingTop: "16px",
+    paddingBottom: "16px",
   },
   title: {
     fontSize: "24px",
     color: "#fff",
     textAlign: "center",
-    paddingTop: "35px",
   },
   subtitle: {
     textAlign: "center",
@@ -38,6 +40,11 @@ const useStyles = makeStyles({
     width: "66px",
     marginBottom: "16px",
   },
+  warningIcon: {
+    color: "#fff",
+    width: "36px",
+    height: "31px",
+  },
 });
 
 const ProductNote = () => {
@@ -45,6 +52,7 @@ const ProductNote = () => {
 
   return (
     <Container className={classes.container}>
+      <WarningIcon className={classes.warningIcon} />
       <Typography variant="h4" className={classes.title}>
         LƯU Ý KHI LIÊN HỆ
       </Typography>

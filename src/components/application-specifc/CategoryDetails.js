@@ -73,10 +73,10 @@ const CategoryDetails = () => {
 
       <Box className={classes.sliderBox}>
         <Slider {...settings}>
-          <SmallCard src="/product1.jpg" title="TÚI XÁCH PHỤ KIỆN" />
-          <SmallCard src="/product2.jpg" title="ÁO THUN MÀU ĐỎ" />
-          <SmallCard src="/product1.jpg" title="VÁY ĐẦM DẠ HỘI" />
-          <SmallCard src="/product1.jpg" title="VÁY" />
+          <SmallCard src="/bag.png" title="TÚI XÁCH PHỤ KIỆN" />
+          <SmallCard src="/tshirt.png" title="ÁO THUN MÀU ĐỎ" />
+          <SmallCard src="/dress.png" title="VÁY ĐẦM DẠ HỘI" />
+          <SmallCard src="/tshirt.png" title="VÁY" />
         </Slider>
       </Box>
 

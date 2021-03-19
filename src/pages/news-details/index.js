@@ -16,24 +16,23 @@ import HomeButtons from "../../components/home/HomeButtons";
 import Portifolio from "../../components/application-specifc/Portiflio";
 import ProductComments from "../../components/application-specifc/ProductComments";
 import Map from "../../components/application-specifc/Map";
+import TypicalProducts from "../../components/application-specifc/TypicalProducts";
 
-const Product = () => {
+const NewsDetails = () => {
   return (
     <>
       <Header />
       <ProductHero />
       <BreadCrumb />
-      <ProductBox />
-      <ProductDescription />
-      <ProductFeature />
-      <ProductNote />
-      <ProductStats />
-      <Map />
+      <ProductBox hideThumb />
+      <ProductDescription short />
       <ProductForm />
       <News onlyChia />
-      <Portifolio />
-      <ProductFeature />
+      <TypicalProducts />
       <ProductComments />
+      <Portifolio />
+      <Map />
+      {/* <ProductFeature /> */}
       <News onlyChia />
       <Reviews />
       <FindWhatYouNeed />
@@ -44,4 +43,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default NewsDetails;

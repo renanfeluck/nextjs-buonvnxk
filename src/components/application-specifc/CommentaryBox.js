@@ -41,6 +41,7 @@ const useStyles = makeStyles({
   commentDescriptionBox: {
     display: "flex",
     flexDirection: "column",
+    paddingLeft: "55px",
   },
   descriptionText: {
     font:
@@ -52,6 +53,7 @@ const useStyles = makeStyles({
     letterSpacing: "0.09px",
     color: "#545454",
     opacity: "1",
+    lineHeight: "16px",
   },
   commentDate: {
     display: "flex",

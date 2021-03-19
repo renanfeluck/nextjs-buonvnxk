@@ -53,7 +53,7 @@ const useStyles = makeStyles({
   },
 });
 
-const News = () => {
+const News = ({ onlyChia }) => {
   const classes = useStyles();
 
   function NextArrow(props) {
@@ -109,66 +109,70 @@ const News = () => {
     <Box className={classes.backgroundBox}>
       <Container className={classes.container}>
         <Grid container>
-          <Grid item className={classes.gridItemContainer} xs={12}>
-            <Title title="TIN CẦN MUA MỚI" black />
-            <Box className={classes.sliderBox}>
-              <Slider {...settings}>
-                <ProductCard
-                  src="/shoes.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product1.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product2.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-              </Slider>
-              <Button className={classes.button}> Xem thêm </Button>
-            </Box>
-          </Grid>
+          {!onlyChia && (
+            <>
+              <Grid item className={classes.gridItemContainer} xs={12}>
+                <Title title="TIN CẦN MUA MỚI" black />
+                <Box className={classes.sliderBox}>
+                  <Slider {...settings}>
+                    <ProductCard
+                      src="/shoes.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                    <ProductCard
+                      src="/product1.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                    <ProductCard
+                      src="/product2.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Slider>
+                  <Button className={classes.button}> Xem thêm </Button>
+                </Box>
+              </Grid>
 
-          <Grid item className={classes.gridItemContainer} xs={12}>
-            <Title title="TIN CẦN MUA MỚI" black />
+              <Grid item className={classes.gridItemContainer} xs={12}>
+                <Title title="TIN CẦN MUA MỚI" black />
 
-            <Box className={classes.sliderBox}>
-              <Slider {...settings}>
-                <ProductCard
-                  src="/product1.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product1.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-                <ProductCard
-                  src="/product2.jpg"
-                  title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
-                  description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
-                  phone="091 491 440"
-                  review="102"
-                />
-              </Slider>
-              <Button className={classes.button}> Xem thêm </Button>
-            </Box>
-          </Grid>
+                <Box className={classes.sliderBox}>
+                  <Slider {...settings}>
+                    <ProductCard
+                      src="/product1.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                    <ProductCard
+                      src="/product1.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                    <ProductCard
+                      src="/product2.jpg"
+                      title="KHO SỈ HÀNG VNXK, CAMBODIA UY TÍN, KHO HÀNG CHẤT LƯỢNG"
+                      description="Mình bán lô áo sơ mi nam hiệu polo xuất mỹ xịn đét, chất đẹp chất lượng khỏi bàn, mọi .."
+                      phone="091 491 440"
+                      review="102"
+                    />
+                  </Slider>
+                  <Button className={classes.button}> Xem thêm </Button>
+                </Box>
+              </Grid>
+            </>
+          )}
 
           <Grid item className={classes.gridItemContainer} xs={12}>
             <Title title="CHIA SẺ KINH NGHIỆM" black />

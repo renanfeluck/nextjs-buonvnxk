@@ -16,6 +16,7 @@ import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import CommentaryBox from "../application-specifc/CommentaryBox";
 import StarIcon from "@material-ui/icons/Star";
+import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles({
   container: {
@@ -23,6 +24,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    padding: "29px",
   },
   bold: {
     textAlign: "left",
@@ -71,12 +73,6 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
   },
-  checkBox: {
-    textAlign: "left",
-    font: "normal normal normal 10px/14px Montserrat",
-    letterSpacing: "0.08px",
-    color: "#161616",
-  },
   buttonOutline: {
     textAlign: "left",
     font: "normal normal medium 14px/24px Montserrat",
@@ -84,6 +80,7 @@ const useStyles = makeStyles({
     color: "#00B14F",
     opacity: "1",
     marginRight: "12px",
+    height: "37px",
   },
   buttonFill: {
     background: "#00B14F 0% 0% no-repeat padding-box",
@@ -95,9 +92,11 @@ const useStyles = makeStyles({
     color: "#FFFFFF",
     opacity: "1",
     fontWeight: "bold",
+    height: "37px",
   },
   formButtons: {
     display: "flex",
+    paddingTop: "16px",
   },
   checkbox: {
     textAlign: "left",
@@ -105,7 +104,8 @@ const useStyles = makeStyles({
     letterSpacing: "0.08px",
     color: "#161616",
     opacity: "1",
-    fontSize: "14px",
+    fontSize: "10px",
+    lineHeight: "12px",
   },
   reviewBox: {
     display: "flex",
@@ -161,6 +161,7 @@ const ProductForm = () => {
           textColor="primary"
           onChange={handleChange}
           aria-label="disabled tabs example"
+          TabIndicatorProps={{ style: { background: "#00B14F" } }}
         >
           <Tab label="BÌNH LUẬN" />
           <Tab label="ĐÁNH GIÁ" />
@@ -172,8 +173,21 @@ const ProductForm = () => {
           onChangeIndex={handleChangeIndex}
         >
           <TabPanel value={value} index={0}>
-            <Typography className={classes.bold}> Thêm bình luận </Typography>
-            <Typography className={classes.light}> Theo dõi </Typography>
+            <Box
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography className={classes.bold}> Thêm bình luận </Typography>
+              <Typography
+                className={classes.light}
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <MailIcon /> Theo dõi
+              </Typography>
+            </Box>
 
             <Box p={1}>
               <TextField
@@ -321,27 +335,38 @@ const ProductForm = () => {
               <Button className={classes.buttonOutline}> Cancel </Button>
               <Button className={classes.buttonFill}> Gửi </Button>
             </Box>
-
-            <Divider />
           </TabPanel>
         </SwipeableViews>
       </Paper>
-      <CommentaryBox
-        src="/product2.jpg"
-        comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
-        count="159"
-        description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
-        date="28/02/2021 15:57"
-        background="#fff"
-      />
-      <CommentaryBox
-        src="/product2.jpg"
-        comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
-        count="159"
-        description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
-        date="28/02/2021 15:57"
-        background="#fff"
-      />
+
+      <Box style={{ padding: "8px", backgroundColor: "#fff" }}>
+        <Divider />
+      </Box>
+
+      <Box
+        style={{
+          paddingTop: "16px",
+          paddingBottom: "16px",
+          backgroundColor: "#fff",
+        }}
+      >
+        <CommentaryBox
+          src="/product2.jpg"
+          comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+          count="159"
+          description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
+          date="28/02/2021 15:57"
+          background="#fff"
+        />
+        <CommentaryBox
+          src="/product2.jpg"
+          comment="Kho sỉ hàng VNXK, Cambodia uy tín, kho hàng chất lượng..."
+          count="159"
+          description="gửi mình bảng giá mua buôn & hình ảnh qua mail nhé"
+          date="28/02/2021 15:57"
+          background="#fff"
+        />
+      </Box>
     </Container>
   );
 };

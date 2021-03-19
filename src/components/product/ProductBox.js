@@ -74,9 +74,13 @@ const useStyles = makeStyles({
     height: "16px",
     marginRight: "6px",
   },
+  likeIcon: {
+    width: "14px",
+    height: "14px",
+  },
 });
 
-const ProductBox = () => {
+const ProductBox = ({ hideThumb }) => {
   const classes = useStyles();
 
   const images = [
@@ -122,7 +126,7 @@ const ProductBox = () => {
         <Grid className={classes.socialBox} item xs={5}>
           <Box pr={1}>
             <Button className={classes.socialButton}>
-              <ThumbUpIcon /> Thích
+              <ThumbUpIcon className={classes.likeIcon} /> Thích
             </Button>
           </Box>
           <Box>
@@ -134,11 +138,12 @@ const ProductBox = () => {
           <img className={classes.mainImage} src="/product1.jpg" />
         </Grid>
 
-        {images.map((product) => (
-          <Grid item xs={3}>
-            <img className={classes.thumb} src={product} />
-          </Grid>
-        ))}
+        {!hideThumb &&
+          images.map((product) => (
+            <Grid item xs={3}>
+              <img className={classes.thumb} src={product} />
+            </Grid>
+          ))}
       </Grid>
     </Container>
   );

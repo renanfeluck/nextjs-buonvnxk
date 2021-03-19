@@ -33,7 +33,7 @@ export default function ProductList() {
       <ProductComments />
       <Portifolio />
       <Map />
-      <News />
+      <News onlyChia />
       <Review />
       <FindWhatYouNeed />
       <HomeButtons />

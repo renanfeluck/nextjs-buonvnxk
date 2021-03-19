@@ -36,6 +36,18 @@ const useStyles = makeStyles({
     width: "100%",
     height: "auto",
   },
+  productImageBox: {
+    height: "123px",
+    overflow: "hidden",
+  },
+  commentTitle: {
+    textAlign: "left",
+    font: "normal normal medium 12px/20px Montserrat",
+    letterSpacing: "0.09px",
+    color: "#161616",
+    fontSize: "12px",
+    fontWeight: "bold",
+  },
 });
 
 const ProductComments = () => {
@@ -48,20 +60,24 @@ const ProductComments = () => {
       <Box className={classes.commentBox}>
         <Grid container>
           <Grid item xs={12}>
-            <Box>
-              <img className={classes.productImage} src="/footerBanner.png" />
-              <Typography>
-                Kho sỉ hàng VNXK, Cambodia uy tín kho hàng chất lượng...
-              </Typography>
-              <Box className={classes.reviewBox}>
-                <StarIcon className={classes.reviewIcon} />
-                <StarIcon className={classes.reviewIcon} />
-                <StarIcon className={classes.reviewIcon} />
-                <StarIcon className={classes.reviewIcon} />
-                <StarIcon className={classes.reviewIcon} />
-                <Typography className={classes.reviewText}>
-                  (102 đánh giá)
+            <Box style={{ backgroundColor: "#fff" }}>
+              <Box className={classes.productImageBox}>
+                <img className={classes.productImage} src="/product1.jpg" />
+              </Box>
+              <Box style={{ padding: "10px" }}>
+                <Typography className={classes.commentTitle}>
+                  Kho sỉ hàng VNXK, Cambodia uy tín kho hàng chất lượng...
                 </Typography>
+                <Box className={classes.reviewBox}>
+                  <StarIcon className={classes.reviewIcon} />
+                  <StarIcon className={classes.reviewIcon} />
+                  <StarIcon className={classes.reviewIcon} />
+                  <StarIcon className={classes.reviewIcon} />
+                  <StarIcon className={classes.reviewIcon} />
+                  <Typography className={classes.reviewText}>
+                    (102 đánh giá)
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Grid>
