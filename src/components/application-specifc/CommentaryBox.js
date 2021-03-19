@@ -62,17 +62,27 @@ const useStyles = makeStyles({
   },
 });
 
-const CommentaryBox = ({ src, comment, count, description, date }) => {
+const CommentaryBox = ({
+  src,
+  comment,
+  count,
+  description,
+  date,
+  background,
+}) => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.commentBox}>
+    <Box
+      className={classes.commentBox}
+      style={{ backgroundColor: background ? background : "" }}
+    >
       <Box className={classes.commentTitleBox}>
         <Box className={classes.picture}>
           <ProfilePicture src={src} width="40px" height="40px" />
         </Box>
         <Typography className={classes.comment}> {comment} </Typography>
-        {!description && (
+        {!description && count && (
           <Box className={classes.countBox}>
             <Typography className={classes.count}> +({count}) </Typography>
           </Box>

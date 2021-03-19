@@ -21,7 +21,16 @@ const useStyles = makeStyles({
   },
 });
 
-const IconTextButton = ({ icon, text, background, color, selected }) => {
+const IconTextButton = ({
+  icon,
+  text,
+  background,
+  color,
+  selected,
+  width,
+  height,
+  padding,
+}) => {
   const classes = useStyles();
 
   return (
@@ -31,6 +40,11 @@ const IconTextButton = ({ icon, text, background, color, selected }) => {
         backgroundColor: background ? background : "",
         color: color ? color : "",
         boxShadow: selected ? "rgb(255 210 0) 0px 0px 17px" : "",
+        width: width ? width : "",
+        maxWidth: width ? width : "",
+        height: height ? height : "",
+        minHeight: height ? height : "",
+        padding: padding ? padding : "",
       }}
     >
       <Typography className={classes.iconSpan} variant="span">

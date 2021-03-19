@@ -65,3 +65,11 @@ body {
 .MuiDrawer-paper {
   margin-top: 56px;
 }
+
+.MuiTab-textColorPrimary.Mui-selected {
+  text-align: center;
+  font: normal normal medium 12px/24px Montserrat;
+  letter-spacing: 0.09px;
+  color: #00b14f !important;
+  opacity: 1;
+}
